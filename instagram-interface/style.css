@@ -17,12 +17,25 @@
 }
 
 .container-celular{
-    
-    width: 400px;
-    height: 400px;
-    
-
+   width: 400px;
+   
 }
+
+#cel{
+    position: absolute;
+}
+
+
+
+
+
+#tela{
+    width: 257px;
+    margin-left: 73px;
+    margin-top: 15px;
+    position: absolute;
+}
+
 
 .container-input{
     
@@ -138,10 +151,44 @@
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     height: 60px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cadastre p{
+    font-size: 14px;
+}
+
+#cadastre{
+    color: #0095F6;
 }
 
 .logos{
     display: flex;
     align-items: center;
     flex-direction: column;
+    
+}
+
+#title{
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+#appstore{
+    width: 140px;
+    margin-right: 2px;
+}
+
+#googleplay{
+    width: 140px;
+    margin-left: 2px;
+}
+
+@media (max-width: 875px) {
+    .container-celular{
+        display: none;
+    }
 }
