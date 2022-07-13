@@ -2,7 +2,7 @@ function Username() {
   
     return (
       <div>
-        name of the user
+        <h2>Cairo Medeiros</h2>
       </div>
        
     )

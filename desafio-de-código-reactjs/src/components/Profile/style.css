@@ -1,0 +1,10 @@
+header{
+    max-width: 1440px;
+    background-color: green;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    padding: 15px;
+    
+}

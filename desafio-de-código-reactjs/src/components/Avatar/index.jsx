@@ -2,7 +2,7 @@ function Avatar() {
   
     return (
       <div>
-        FOTO IMG
+        <img src="" alt="avatar"/>
       </div>
        
     )

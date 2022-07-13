@@ -1,6 +1,8 @@
 import ReposListing from '../ReposListing/index';
 import ReposStarred from '../ReposStarred/index';
 
+import './style.css';
+
 function Repositories() {
   
     return (
