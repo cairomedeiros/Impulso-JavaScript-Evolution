@@ -1,7 +1,7 @@
 main{
     max-width: 1440px;
     padding: 15px;
-    height: calc(100vh - 52vh);
+    
     background-color: #E3ECFC;
     border: 1px solid #9ED6E6;
     margin: 5px;
@@ -13,3 +13,25 @@ main{
     margin-left: 5px;
     margin-bottom: 30px;
 }
+
+@media (max-width: 768px) {
+    main{
+        display: flex;
+        
+        flex-direction: column;
+        
+
+    }
+
+    .botoes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+/*@media (max-width: 465px){
+    
+}*/
