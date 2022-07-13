@@ -8,13 +8,12 @@ export const fetchAsyncRepos = createAsyncThunk('repos/fetchAsyncRepos', async (
     return response.data;
 });
 export const fetchAsyncReposStarred = createAsyncThunk('repos/fetchAsyncReposStarred', async (term) => {
-    const users = "cairomedeiros";
+    
     const response = await api.get(`/users/${term}/starred?per_page=20`);
       
     return response.data;
 });
 export const fetchAsyncUser = createAsyncThunk('repos/fetchAsyncUser', async (term) => {
-    const users = "cairomedeiros";
     const response = await api.get(`/users/${term}`);
       
     return response.data;
