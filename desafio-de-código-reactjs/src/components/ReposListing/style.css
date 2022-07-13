@@ -1,0 +1,29 @@
+.cardRepo{
+    width: 200px;
+    background-color: #FFF;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: space-evenly;
+
+}
+
+h4{
+    margin: 0;
+    padding: 0;
+}
+.pRepos{
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    
+}

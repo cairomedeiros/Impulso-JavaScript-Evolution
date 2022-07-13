@@ -1,17 +1,25 @@
 .search{
-    width: 100%;
-    height: 60px;
-    background-color: blue;
+    
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
+    
 }
 
 .inputStyle{
+    
     width: 40%;
     border: 0 none;
-    height: 20px;
+    height: 30px;
     background-color: #fff;
     padding: 5px;
+    border-radius: 5px;
     
     
+}
+
+.searchButton{
+    margin-left: 10px;
 }

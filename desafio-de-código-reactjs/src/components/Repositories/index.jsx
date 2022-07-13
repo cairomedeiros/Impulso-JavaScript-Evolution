@@ -24,14 +24,16 @@ function Repositories() {
 
     return (
       <main>
-        
+        <div className='botoes'>
         <button type='button' onClick={() => setShow(true)}>
-          Repos
+          Repositories
         </button>
 
         <button type='button' onClick={() => setShow(false)}>
-          favoritos
+          Starreds
         </button>
+
+        </div>
 
         {show ? (<ReposListing/>):(<ReposStarred/>)}
         

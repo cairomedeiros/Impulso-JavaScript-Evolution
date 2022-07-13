@@ -1,5 +1,15 @@
 main{
     max-width: 1440px;
-    height: 100vh;
-    background-color: greenyellow;
+    padding: 15px;
+    height: calc(100vh - 52vh);
+    background-color: #E3ECFC;
+    border: 1px solid #9ED6E6;
+    margin: 5px;
+
+    border-radius: 15px;
+}
+
+.botoes{
+    margin-left: 5px;
+    margin-bottom: 30px;
 }

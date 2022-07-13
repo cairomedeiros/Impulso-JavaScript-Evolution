@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux';
 import { getUserInfo } from '../../features/repos/repoSlice';
 import logo from '../../assets/user.png';
 
+import './style.css';
+
 function Avatar() {
 
   const user = useSelector(getUserInfo);

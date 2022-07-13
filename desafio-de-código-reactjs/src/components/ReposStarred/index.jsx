@@ -7,11 +7,11 @@ function ReposStarred() {
 
 
     return (
-      <div>
+      <div className='card'>
         {reposStarred.map((starred)=> {
           return(
-            <div key={starred.id}>
-              <h1>{starred.name}</h1>
+            <div className="cardRepo" key={starred.id}>
+              <h4>{starred.name}</h4>
             </div>
           )
         })}

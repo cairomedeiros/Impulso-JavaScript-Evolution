@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import { getUserInfo } from '../../features/repos/repoSlice';
+import './style.css';
 
 function Username() {
 

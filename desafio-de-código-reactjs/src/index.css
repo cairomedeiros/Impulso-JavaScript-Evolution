@@ -1,19 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: 0;
   outline: 0;
   box-sizing: border-box;
+  background-color:   #002738;
+
+  font-family: 'Roboto', sans-serif;
 }
 
+
+button{
+  background-color: #002738;
+  width: 200px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 16px;
+  border: 1px ridge #002738;
+}
+button:hover{
+  background-color: #013a52;
+  box-shadow: 0 0 5px 0 #013a52;
+}
 input{
   all: unset;
+}
+
+#root{
+  height: 100vh;
+  width: 100%;
+  
 }
 
 button{
   cursor: pointer;
   border: none;
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

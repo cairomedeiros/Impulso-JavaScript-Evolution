@@ -19,9 +19,14 @@ function Profile() {
     return (
       <header>
         <SearchBar/>
-        <Avatar/>
-        <Username/>
-        <UserStatus/>
+          <div className='informations'>
+            <Avatar/>
+
+            <div className='username'>
+              <Username/>
+              <UserStatus/>
+            </div>
+          </div>
       </header>
        
     )
