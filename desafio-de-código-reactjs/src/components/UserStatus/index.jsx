@@ -1,18 +1,25 @@
+import { useSelector } from 'react-redux';
+import { getUserInfo } from '../../features/repos/repoSlice';
+
 function UserStatus() {
+
+  const info = useSelector(getUserInfo);
+
+  console.log(info)
+
   
     return (
       <div>
         <div className="column">
-          <p>Username: cairomedeiros</p>
-          <p>Company: impulso</p>
-          <p>Location: Brazil</p>
+          <p>Company: {info.company}</p>
+          <p>Location: {info.location}</p>
         </div>
 
         <div className="row">
-          <small>Followers: 30</small>
-          <small>Followings: 14</small>
-          <small>Gasts: 30</small>
-          <small>Repos: 9</small>
+          <small>Followers: {info.followers}</small>
+          <small>Followings: {info.following}</small>
+          <small>Gists: {info.public_gists}</small>
+          <small>Repos: {info.public_repos}</small>
         </div>
       </div>
        

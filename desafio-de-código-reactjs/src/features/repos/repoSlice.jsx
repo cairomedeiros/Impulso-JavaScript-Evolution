@@ -13,11 +13,18 @@ export const fetchAsyncReposStarred = createAsyncThunk('repos/fetchAsyncReposSta
       
     return response.data;
 });
+export const fetchAsyncUser = createAsyncThunk('repos/fetchAsyncUser', async () => {
+    const users = "cairomedeiros";
+    const response = await api.get(`/users/${users}`);
+      
+    return response.data;
+});
 
 
 const initialState = {
     repos: [],
     starred: [],
+    user: [],
 }
 
 const repoSlice = createSlice({
@@ -43,10 +50,15 @@ const repoSlice = createSlice({
             console.log("Fetched Successfuly!");
             return {...state, starred: payload };
         },
+        [fetchAsyncUser.fulfilled]: (state, {payload}) => {
+            console.log("Fetched Successfuly!");
+            return {...state, user: payload };
+        },
     }
 });
 
 export const { addRepos } = repoSlice.actions;
 export const getAllRepos = (state) => state.repos.repos;
 export const getAllReposStarred = (state) => state.repos.starred;
+export const getUserInfo = (state) => state.repos.user;
 export default repoSlice.reducer;

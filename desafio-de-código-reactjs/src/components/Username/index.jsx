@@ -1,8 +1,13 @@
+import { useSelector } from 'react-redux';
+import { getUserInfo } from '../../features/repos/repoSlice';
+
 function Username() {
+
+  const nome = useSelector(getUserInfo);
   
     return (
       <div>
-        <h2>Cairo Medeiros</h2>
+        <h2>{nome.name}</h2>
       </div>
        
     )

@@ -6,7 +6,7 @@ import SearchBar from '../SearchBar/index';
 import './style.css';
 import { useEffect, useState } from 'react';
 
-import { fetchAsyncRepos, fetchAsyncReposStarred } from '../../features/repos/repoSlice';
+import { fetchAsyncRepos, fetchAsyncReposStarred, fetchAsyncUser } from '../../features/repos/repoSlice';
 import { useDispatch } from 'react-redux';
 
 
@@ -16,6 +16,7 @@ function Profile() {
   useEffect(() => {
    dispatch(fetchAsyncRepos());
    dispatch(fetchAsyncReposStarred());
+   dispatch(fetchAsyncUser());
   }, [dispatch])
 
 
