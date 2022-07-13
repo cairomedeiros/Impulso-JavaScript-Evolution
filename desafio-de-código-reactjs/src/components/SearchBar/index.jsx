@@ -13,6 +13,8 @@ function SearchBar() {
     dispatch(fetchAsyncUser(term));
     dispatch(fetchAsyncRepos(term));
     dispatch(fetchAsyncReposStarred(term));
+
+    setTerm("");
   }
   
     return (
